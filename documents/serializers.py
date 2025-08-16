@@ -1,5 +1,7 @@
 from rest_framework import serializers
+from .models import Document
 
-class GenerateRequestSerializer(serializers.Serializer):
-    prompt = serializers.CharField(max_length=5000)
-    model = serializers.CharField(default="llama2")  # default Ollama model
+class DocumentSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Document
+        fields = ['id', 'name', 'file', 'uploaded_at']
