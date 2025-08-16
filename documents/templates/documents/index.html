@@ -1,19 +1,16 @@
 {% extends "base.html" %}
 
 {% block content %}
-  <h1>Welcome to Documents</h1>
-  <p>This is the main entry page for your documents app.</p>
+<h1>Welcome to Documents</h1>
+<p>This is the main entry page for your documents app.</p>
 
-  <!-- Display uploaded documents dynamically -->
-  <ul>
-    {% for doc in documents %}
-      <li>
-        {{ doc.name }} - <a href="{{ doc.file.url }}">Download</a>
-      </li>
-    {% empty %}
-      <li>No documents found.</li>
-    {% endfor %}
-  </ul>
+<ul>
+  {% for doc in documents %}
+    <li>{{ doc.title }} - <a href="{{ doc.file.url }}">Download</a></li>
+  {% empty %}
+    <li>No documents found.</li>
+  {% endfor %}
+</ul>
 
-  <a href="{% url 'document-upload' %}">Upload a new document</a>
+<a href="{% url 'document-upload' %}">Upload a new document</a>
 {% endblock %}

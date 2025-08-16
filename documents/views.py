@@ -9,4 +9,4 @@ class DocumentViewSet(viewsets.ModelViewSet):
 
 def document_list(request):
     documents = Document.objects.all()  # Pass documents to template
-    return render(request, 'documents/index.html', {'documents': documents})
+    return render(request, 'documents/', {'documents': documents})
