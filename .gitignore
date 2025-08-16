@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+*.egg
+*.log
+
+# Virtual environment
+env/
+venv/
+.venv/
+ENV/
+
+# IDE / Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Django specific
+*.sqlite3
+db.sqlite3
+media/
+staticfiles/
+*.pot
+*.pyc
+
+# Migrations cache (keep migrations but ignore cache files)
+*/migrations/__pycache__/
+
+# OS specific
+.DS_Store
+Thumbs.db
+
+# dotenv
+.env
+*.env
