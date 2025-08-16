@@ -29,6 +29,7 @@ staticfiles/
 *.pyc
 
 # Migrations cache (keep migrations but ignore cache files)
+*/migrations/
 */migrations/__pycache__/
 */__pycache__
 
