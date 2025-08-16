@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AskMyFile</title>
+</head>
+<body>
+    <nav>
+        <a href="{% url 'document-list' %}">Home</a>
+    </nav>
+    
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+</body>
+</html>
